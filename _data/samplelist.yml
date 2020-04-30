@@ -1,0 +1,14 @@
+docs_list_title: ""
+docs:
+
+- title: Home
+  url: index.html
+
+- title: About
+  url: about.html
+
+- title: Work
+  url: work.html
+  
+- title: Contacts
+  url: contacts.html
