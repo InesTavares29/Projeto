@@ -1,16 +1,16 @@
 ---
 layout: page
-title: Work
+title: Case Studies
 permalink: /work/
 ---
 
-<h1>Case Studies</h1>
-
-<ul>
-  {% for casestudies in site.casestudies %}
-    <li>
-      <h2><a href="{{ casestudies.url }}">{{ casestudies.name }}</a></h2>
-      <p>{{ casestudies.content | markdownify }}</p>
-    </li>
-  {% endfor %}
-</ul>
+<nav>
+	<ul>
+	  {% for casestudies in site.casestudies %}
+	    <li>
+	      <h2><a href="{{site.baseurl}}/casestudies/{{casestudies.slug}}">{{casestudies.title}}</a></h2>
+	      <p>{{ casestudies.content }}</p>
+	    </li>
+	  {% endfor %}
+	</ul>
+</nav>

@@ -2,20 +2,10 @@
 layout: default
 ---
 
+<header class="post-header">
+	<h1 class="post-title p-name" itemprop="name headline">{{ page.title }}</h1>
+</header>
 
-<strong>Case Studies</strong>
-
-
-<nav>
-    <ul>
-        {% for casestudies in site.casestudies %}
-        <li>
-            <a href="{{ site.baseurl }}/{{ item.url }}" class="{% if page.url contains casestudies.slug %}current{% endif %}">{{casestudies.title}}</a>
-        </li>
-        {% endfor %}
-    </ul>
-</nav>
-
-<!--href="{{site.baseurl}}/casestudies/{{casestudies.slug}}"-->
-
-{{content}}
+<div class="post-content e-content" itemprop="articleBody">
+	{{ content }}
+</div>
