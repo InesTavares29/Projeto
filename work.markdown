@@ -8,8 +8,7 @@ permalink: /work/
 	<ul>
 	  {% for casestudies in site.casestudies %}
 	    <li>
-	      <h2><a href="{{site.baseurl}}/casestudies/{{casestudies.slug}}">{{casestudies.title}}</a></h2>
-	      <p>{{ casestudies.content }}</p>
+	     <a href="{{site.baseurl}}/casestudies/{{casestudies.slug}}">{{casestudies.title}}</a>
 	    </li>
 	  {% endfor %}
 	</ul>
