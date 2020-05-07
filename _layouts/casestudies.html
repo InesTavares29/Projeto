@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+
+<strong>Case Studies</strong>
+
+
+<nav>
+    <ul>
+        {% for casestudies in site.casestudies %}
+        <li>
+            <a href="{{ site.baseurl }}/{{ item.url }}" class="{% if page.url contains casestudies.slug %}current{% endif %}">{{casestudies.title}}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</nav>
+
+<!--href="{{site.baseurl}}/casestudies/{{casestudies.slug}}"-->
+
+{{content}}
