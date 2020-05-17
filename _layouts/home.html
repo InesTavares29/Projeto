@@ -2,33 +2,37 @@
 layout: default
 ---
 
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="post-title">{{ page.title }}</h1>
-  {%- endif -%}
+<section class="hero">
+        
+    <div class="hero-container">
+              
+      <h1>human,<br>first.<br>creative<br>thinker,<br>next.</h1>
+      <p>I'm Inês, glad to meet you.</p>
+            
+    </div>
 
-  {{ content }}
+    <div class="hero-pic">
+              
+        <img src="assets/protecttheforests.svg" alt="Protect the enviroment illustration">
+            
+    </div>
 
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
+</section>
 
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  {%- endif -%}
+<section class="featured-work">
 
-</div>
+	<div class="featured-title">
+
+		<h2>featured work.</h2>
+
+	<div>
+
+	<div class="featured-flexible">
+
+		{% include gardenpot.html %}
+		{% include doublehelix.html %}
+		{% include lupastudio.html %}
+
+	</div>
+
+</section>

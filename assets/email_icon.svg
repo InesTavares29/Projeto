@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="41px" viewBox="0 0 40 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Layout_Desktop-1440px-Copy" transform="translate(-736.000000, -3643.000000)">
+            <g id="Group-4" transform="translate(736.000000, 3643.500000)">
+                <g id="Group-2">
+                    <path d="M20,0 C31.0382813,0 40,8.96171875 40,20 C40,31.0382813 31.0382813,40 20,40 C8.96171875,40 0,31.0382813 0,20 C0,8.96171875 8.96171875,0 20,0 L20,0 Z" id="Fill-1-Copy" fill="#054343"></path>
+                    <path d="M28.5,15.75 L20,21.0625 L11.5,15.75 L11.5,13.625 L20,18.9375 L28.5,13.625 L28.5,15.75 Z M9.375,28.5 L30.625,28.5 L30.625,11.5 L9.375,11.5 L9.375,28.5 Z" id="Fill-1" fill="#F6B5B3"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

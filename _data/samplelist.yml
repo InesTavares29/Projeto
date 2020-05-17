@@ -1,14 +1,12 @@
-docs_list_title: ""
+docs_list_title: navigation
 docs:
 
-- title: Home
-  url: index.html
 
 - title: About
   url: about.html
 
-- title: Work
-  url: work.html
+- title: Cases studies
+  url: casestudies.html
   
 - title: Contacts
   url: contacts.html

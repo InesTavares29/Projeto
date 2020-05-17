@@ -1,34 +1,26 @@
 <footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+      <h2>get in touch.</h2>
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
+      <div class="social-media">
+
+          <a href="mailto:inestavares.design@gmail.com" title="send me an e-mail" target="_blank"> 
+            <img src="assets/email_icon.svg" alt="e-mail icon">
+          </a>
+            
+          <a href="https://www.behance.net/InesTavares" title="go to my behance website" target="_blank"> 
+            <img src="assets/behance_icon.svg" alt="behance's icon, an online portfolio platform">
+          </a>
+
+          <a href="https://www.linkedin.com/in/inestavares29" title="go to my linkedin profile page" target="_blank"> 
+            <img src="assets/linkedin_icon.svg" alt="linkedin's icon, a professional social media platform">
+          </a>
+
       </div>
 
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
-    </div>
+      <p>© all rights reserved. 2019.</p>
 
   </div>
 
