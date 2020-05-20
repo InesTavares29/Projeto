@@ -2,25 +2,15 @@
 
   <div class="wrapper">
 
-      <h2>get in touch.</h2>
+  	{% unless page.title == "Get in touch" %}
 
-      <div class="social-media">
+		 <h2>Let's talk?</h2>
 
-          <a href="mailto:inestavares.design@gmail.com" title="send me an e-mail" target="_blank"> 
-            <img src="assets/email_icon.svg" alt="e-mail icon">
-          </a>
-            
-          <a href="https://www.behance.net/InesTavares" title="go to my behance website" target="_blank"> 
-            <img src="assets/behance_icon.svg" alt="behance's icon, an online portfolio platform">
-          </a>
+ 		{%- include socialmedia-contacts.html -%}
 
-          <a href="https://www.linkedin.com/in/inestavares29" title="go to my linkedin profile page" target="_blank"> 
-            <img src="assets/linkedin_icon.svg" alt="linkedin's icon, a professional social media platform">
-          </a>
+ 	{% endunless %}
 
-      </div>
-
-      <p>© all rights reserved. 2019.</p>
+    <p>© all rights reserved. 2019.</p>
 
   </div>
 
