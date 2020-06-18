@@ -5,11 +5,17 @@
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
 
-    <a href="{{site.baseurl}}/{{ navigation.url }}"><img src="assets/signature.svg" alt="ines's tavares signature image"></a>
+    <div class="menu">
 
-    {%- if page_paths -%}
+      <div class="signature-container">
 
-      <nav class="site-nav">
+        <a href="{{site.baseurl}}/{{ navigation.url }}"><img src="assets/signature.svg" alt="ines's tavares signature image" class="signature"></a>
+
+      </div>
+
+      {%- if page_paths -%}
+
+      <nav>
 
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         
@@ -42,6 +48,8 @@
         </div>
       
       </nav>
+
+    </div>
     
     {%- endif -%}
   
