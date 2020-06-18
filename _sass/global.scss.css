@@ -1,0 +1,57 @@
+/* this applies from 0 px to 600px */
+
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		h1 {
+			font-family: $title-font;
+			color: $lightgrey;
+			font-weight: normal;
+			font-size: 28px;
+		}
+
+		h2 {
+			font-family: $body-text; 
+			color: $lightgrey;
+			font-weight: bold;
+			font-size: 22px;
+		}
+
+		p { 
+			font-family: $body-text; 
+			color: #ECEFF2;
+			font-size: 16px;
+			line-height: 22px;
+		}
+
+		.container {
+			padding: 0 30px;
+		}
+
+
+/* --------------------------------------------------------------------- */
+/* -------------- this applies from 600px to 960px ---------------------*/
+
+@media screen and (min-width: 600px) {
+
+		
+		.container {
+			padding: 0 60px;
+		}
+
+
+/* --------------------------------------------------------------------- */
+/* ------------------ this applies from 960px onwards ------------------*/
+
+
+@media screen and (min-width: 960px) {
+
+		.container {
+			padding: 0 60px;
+			max-width: 1032px;
+			margin: 0 auto;
+		}
+}
+

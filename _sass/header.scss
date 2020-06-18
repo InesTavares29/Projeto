@@ -7,9 +7,6 @@
 	box-shadow: 0 2px 10px $black-green;	
 }
 
-.container {
-	@include container;
-}
 
 .wrapper {
 	width: 100%;
@@ -55,15 +52,17 @@ nav {
 
 	a {
 	text-decoration: none;
-	@include p;
+	font-family: $body-font;
+	font-size: 16px;
 	}
 
 }
 
 a:hover {
-	color: #F6B5B3;	
+	color: $blush-pink;	
 }
 
 a:active {
-	color: #F6B5B3;	
+	color: $blush-pink;	
 }
+

@@ -1,0 +1,39 @@
+/* this applies from 0 px to 600px */
+
+
+.hero {
+	padding-top: 124px;
+	background-color: $dark-green;
+
+	h1 {
+		font-family: $title-font;
+		color: $linen;
+		font-size: 58px;
+		line-height: 64px;
+		text-align: center;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding-top: 16px;
+	}
+
+	p {
+		font-size: 18px;
+		margin-top: 24px;
+		text-align: center;
+		margin-bottom: 0px;
+	}
+
+.container {
+	@include container;
+}
+
+.hero-flexible {
+	display: flex;
+	flex-direction: column;
+}
+
+
+.hero-text {
+	margin: 0 auto;
+}
+
