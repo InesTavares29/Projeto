@@ -1,22 +1,29 @@
 @mixin h1 {
-			font-family: $title-font;
-			font-weight: normal;
-			font-size: 28px;
+	font-family: $title-font;
+	font-weight: normal;
+	font-size: 28px;
 }
 
 @mixin h2 {
-			font-family: $body-font;
-			font-weight: bold;
-			font-size: 22px;
+	font-family: $body-font;
+	font-weight: bold;
+	font-size: 22px;
 }
 
 
 @mixin p {
-			font-family: $body-font;
-			font-size: 16px;
-			line-height: 22px;
+	font-family: $body-font;
+	font-size: 16px;
+	line-height: 22px;
 }
 
 @mixin container {
-			padding: 0 30px;
+	padding: 0 30px;
+}
+
+
+@mixin container960px {
+	padding: 0 60px;
+	max-width: 1032px;
+	margin: 0 auto;
 }
