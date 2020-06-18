@@ -7,21 +7,21 @@
 
 		h1 {
 			font-family: $title-font;
-			color: $lightgrey;
+			color: $light-grey;
 			font-weight: normal;
 			font-size: 28px;
 		}
 
 		h2 {
-			font-family: $body-text; 
-			color: $lightgrey;
+			font-family: $body-font; 
+			color: $light-grey;
 			font-weight: bold;
 			font-size: 22px;
 		}
 
 		p { 
-			font-family: $body-text; 
-			color: #ECEFF2;
+			font-family: $body-font; 
+			color: $light-grey;
 			font-size: 16px;
 			line-height: 22px;
 		}
@@ -35,11 +35,11 @@
 /* -------------- this applies from 600px to 960px ---------------------*/
 
 @media screen and (min-width: 600px) {
-
 		
 		.container {
 			padding: 0 60px;
 		}
+}
 
 
 /* --------------------------------------------------------------------- */
