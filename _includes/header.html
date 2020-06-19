@@ -1,42 +1,42 @@
-<header class="site-header">
+<header>
 
-  <div class="wrapper">
+  <div class="site-header">
+      
+    <div class="container">
 
-    {%- assign default_paths = site.pages | map: "path" -%}
-    {%- assign page_paths = site.header_pages | default: default_paths -%}
+      {%- assign default_paths = site.pages | map: "path" -%}
+      {%- assign page_paths = site.header_pages | default: default_paths -%}
 
-    <div class="menu">
+      <div class="menu">
 
-      <div class="signature-container">
+        <div class="signature-container">
 
-        <a href="{{site.baseurl}}/{{ navigation.url }}"><img src="assets/signature.svg" alt="ines's tavares signature image" class="signature"></a>
+          <a href="{{site.baseurl}}/{{ navigation.url }}"><img src="assets/signature.svg" alt="ines's tavares signature image" class="signature"></a>
 
-      </div>
+        </div>
 
-      {%- if page_paths -%}
+           {%- if page_paths -%}
 
-      <nav>
-
-        <div class="trigger">
+        <nav>
       
           <ul>
 
-          {% for item in site.data.samplelist.docs %}
+            {% for item in site.data.samplelist.docs %}
 
-            <li><a class="page-link" href="{{site.baseurl}}/{{ item.url }}">{{ item.title }}</a></li>
+             <li><a class="page-link" href="{{site.baseurl}}/{{ item.url }}">{{ item.title }}</a></li>
 
-          {% endfor %}
-         
+            {% endfor %}
+
           </ul>
-        
-        </div>
-      
-      </nav>
 
-    </div>
+        </nav>
+
+      </div>
     
-    {%- endif -%}
+      {%- endif -%}
   
+    </div>
+
   </div>
 
 </header>

@@ -1,16 +1,28 @@
-<footer class="site-footer h-card">
+<footer class="contact">
 
-  <div class="wrapper">
+  <div class="container">
 
   	{% unless page.title == "Get in touch" %}
 
+  	<div class="contact-text">
+
 		 <h2>Let's talk?</h2>
 
+	</div>
+
+	<div class="social-media">
+ 		
  		{%- include socialmedia-contacts.html -%}
+ 	
+ 	</div>
 
  	{% endunless %}
 
-    <p>© all rights reserved. 2019.</p>
+ 	<div class="contact-text">
+
+    	<p>© all rights reserved. 2019.</p>
+    
+    </div>
 
   </div>
 
