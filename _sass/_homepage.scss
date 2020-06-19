@@ -1,0 +1,93 @@
+/* this applies from 0 px to 600px */
+
+.hero {
+	padding-top: 124px;
+	background-color: $dark-green;
+}
+
+
+.hero-flexible {
+	display: flex;
+	flex-direction: column;
+}
+
+
+.hero-text {
+	margin: 0 auto;
+	text-align: center;
+	
+	h1 {
+		color: $linen;
+		font-size: 58px;
+		line-height: 64px;
+		text-align: center;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding-top: 16px;
+		padding-bottom: 24px;
+
+		span {
+			color:$blush-pink;
+			font-weight:bold;
+			display:block;
+			margin-top:16px;
+			animation: type 2s;
+		}
+	}
+
+	p {
+		font-size: 18px;
+		margin-top: 24px;
+		margin-bottom: 0px;
+	}
+}
+
+@keyframes type {
+	0% {color: $linen}
+	25% {color: $lighter-green}
+	50% {color: $dark-green}
+	75% {color: $blush-pink}
+}
+
+/* --------------------------------------------------------------------- */
+/* -------------- this applies from 960px onwards ---------------------*/
+
+@media screen and (min-width: 600px) {
+
+	.hero {
+		padding-top: 66px;
+		padding-bottom: 66px;
+	}
+
+	.hero-flexible {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.hero-text {
+		margin-left: 0;
+		text-align: left;
+
+		h1 {
+		text-align: left;
+		width: 50%;
+		padding-bottom:48px;
+		}
+
+		p {
+		text-align: left;
+		padding-top:20px;
+		margin-bottom: 24px;
+		}
+	}
+
+	.hero-pic {
+		width:50%;
+
+		img {
+			max-width: 500px;
+		}
+	}
+}

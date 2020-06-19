@@ -1,0 +1,186 @@
+/* this applies from 0 px to 600px */
+
+
+/* INTRO */
+
+
+.intro {
+	background-color: $light-grey;
+}
+
+
+.intro-flexible {
+	display: flex;
+	flex-direction: column;
+	padding-top:124px;
+}
+
+.intro-text {
+	width: 100%;
+}
+
+
+h1 {
+	color: $dark-green;
+	font-weight: bold;
+}
+
+
+p1 {
+	font-family: $title-font;
+	font-size: 18px;
+	font-weight: bold;
+	color: $dark-green;
+
+	span {
+		color: $dark-pink;
+	}
+}
+
+
+p2 {
+	font-family: $body-font;
+	font-size: 14px;
+	line-height: 22px;
+	color: $dark-green;
+} 
+
+
+.paragraph {
+	padding-top: 32px;
+}
+
+
+.ines-pic {
+	width:100%;
+	max-width: 600px;
+}
+
+
+/* Resume */
+
+
+.resume {
+	background-color: $dark-green;
+	padding-top: 32px;
+	padding-bottom: 32px;
+			
+	h2 {
+		color: $blush-pink;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+			
+	h3 {
+		color: $light-grey;
+		margin-top: 8px;
+		margin-bottom: 8px;
+	}
+}
+
+.resume-flexible {
+	display: flex;
+	flex-direction: column;
+}
+
+.theme-flexible {
+	padding-top: 32px;
+}
+
+.theme-title {
+	display: block;
+	border-bottom: 1px dotted #F2E7DE;
+	margin-bottom: 0px;
+}
+
+
+.theme-content { 
+		  
+	dl {
+		margin-top: 0;
+	}
+		  
+	dt {
+		font-family: $body-font; 
+		font-weight: bold;
+		color: $light-grey;
+		font-size: 16px;
+		line-height: 24px;
+		padding-top: 22px;
+	}
+		  
+	dd {
+		margin: 0;
+		font-family: $body-font; 
+		font-weight: normal;
+		color: $light-grey;
+		font-size: 16px;
+		line-height: 22px;
+	}
+		  
+	ul {
+		margin: 0;
+		padding-top: 22px;
+		padding-left: 0;
+	}
+		  
+	li {
+		font-family: $body-font; 
+		font-weight: normal;
+		color: $light-grey;
+		font-size: 16px;
+		line-height: 22px;
+	}
+}
+
+
+/* --------------------------------------------------------------------- */
+/* -------------- this applies from 600px to 960px ---------------------*/
+
+@media screen and (min-width: 600px) {
+
+	/* RESUME */
+
+	.resume-flexible {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	.theme-flexible {
+		width: 45%;
+	}
+
+}
+
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* ------------------ this applies from 960px onwards ------------------*/
+
+
+@media screen and (min-width: 960px) {
+
+	.intro-flexible {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding-top: 30px;
+	}
+
+	.intro-text {
+		width: 50%;
+		align-self: center;
+	}
+
+	.ines-pic {
+		width: 50%;
+		max-width: 600px;
+		align-self: flex-end;
+	}
+
+}
+
