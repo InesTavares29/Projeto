@@ -1,0 +1,48 @@
+
+/* this applies from 0 px to 600px */
+
+.contact-body {
+	display: flex;
+	flex-direction: column;
+	padding-top:20px;
+	padding-bottom: 40px;
+}
+
+
+.contact-pic {
+	width:100%;
+	max-width: 600px;
+
+	img {
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 600px) {
+
+
+
+.contact-body {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.contact-pic {
+	width: 50%;
+	max-width: 600px;
+	align-self: flex-end;
+}
+}

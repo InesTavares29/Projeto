@@ -1,23 +1,20 @@
-/* WORK */
+/* projects */
 
 .project-list {
 	display: flex;
 	flex-direction: column;
+	padding-bottom: 20px;
 
 	h2 {
-		color: #004950;
+		color: $dark-green;
 		font-weight: bold;
 		margin-top: 0;
 		margin-bottom: 24px;
 	}
 
-	h3 {
-		color: #004950;
-		margin-bottom: 12px;
-	}
 
 	p {
-		color: #004950;
+		color: $dark-green;
 		margin-top: 12px;
 	}
 
@@ -51,6 +48,49 @@
 		border-radius: 8px;
 	}
 }
+
+
+/* cards */
+
+.cards-project{
+	padding-bottom: 48px;
+	h2 {
+		color: $dark-green;
+		font-weight: bold;
+		margin-top: 0;
+		margin-bottom: 24px;
+	}
+
+	p {
+		color: $dark-green;
+		margin: 0px;
+		font-size: 13px;
+	}
+
+	a { color: $lighter-green;
+		@include links; 
+	}
+}
+
+
+.project-cards-grid {
+	display: block;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+.flip-card {
+	width: 100% ;
+	margin: 0 0 32px 0;
+	max-width: 100%;
+
+	img {
+	width:100%;
+	border-radius: 8px;
+	object-fit: cover;
+	}
+}
+
 
 
 /* --------------------------------------------------------------------- */
@@ -102,5 +142,20 @@
 			border-radius: 8px;
 		}
 	}
+
+/* cards */
+
+.project-cards-grid {
+	display: flex;
+	justify-content: space-between;
+}
+
+.flip-card {
+	width: 32%;
+
+	img {
+		width:100%;
+	}
+}
 
 }
