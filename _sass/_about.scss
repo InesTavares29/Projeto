@@ -12,18 +12,20 @@
 .intro-flexible {
 	display: flex;
 	flex-direction: column;
-	padding-top:124px;
+	padding-top:180px;
 }
 
 .intro-text {
 	width: 100%;
-}
 
-
-h1 {
+	h1 {
 	color: $dark-green;
 	font-weight: bold;
+	margin: 0;
+	padding-bottom: 24px;
+	}
 }
+
 
 
 p1 {

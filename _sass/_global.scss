@@ -35,6 +35,30 @@ ul {
 	padding: 0 30px;
 }
 
+.bg-contactwork {
+	background-color: $light-grey;
+}
+
+.contactwork-intro {
+
+	padding-top:140px;
+	
+	h1	{
+		margin:0;
+		color: $dark-green;
+		font-weight: bold;
+		margin: 0;
+		padding-bottom: 16px;
+	}
+
+	p {
+		color: $dark-green;
+		font-size: 18px;
+		margin:0;
+	}
+}
+
+
 
 
 /* --------------------------------------------------------------------- */

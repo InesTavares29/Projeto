@@ -1,0 +1,106 @@
+/* WORK */
+
+.project-list {
+	display: flex;
+	flex-direction: column;
+
+	h2 {
+		color: #004950;
+		font-weight: bold;
+		margin-top: 0;
+		margin-bottom: 24px;
+	}
+
+	h3 {
+		color: #004950;
+		margin-bottom: 12px;
+	}
+
+	p {
+		color: #004950;
+		margin-top: 12px;
+	}
+
+	ul{
+		padding:0; 
+	}
+
+	a { color: $lighter-green;
+		@include links; 
+	}
+}
+
+.project-list-item {
+	padding-top: 48px;
+	padding-bottom: 48px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.project-list-item-2 {
+	align-items: center;
+}
+
+
+.project-pic {
+	
+	img {
+		width: 100%;
+		height: auto;
+		border-radius: 8px;
+	}
+}
+
+
+/* --------------------------------------------------------------------- */
+/* -------------- this applies from 600px to 960px ---------------------*/
+
+@media screen and (min-width: 600px) {
+
+
+	.project-list {
+		display: flex;
+		flex-direction: column;
+
+		h2 {
+		margin-top: 0;
+		}
+
+		h3 {
+		margin-top: 0;
+		}
+	}
+
+	.project-list-item {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.project-list-item-2 {
+		display: flex;
+		flex-direction: row-reverse;
+
+		 .project-pic{
+		 	padding-left: 40px;
+			padding-right: 0px;
+		 }
+	}
+
+	.project-text {
+		width: 50%;
+	}
+
+
+	.project-pic {
+		padding-right: 40px;
+		width: 50%;
+
+		img {
+			width: 100%;
+			height: auto;
+			border-radius: 8px;
+		}
+	}
+
+}
